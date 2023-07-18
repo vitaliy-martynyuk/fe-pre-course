@@ -1,0 +1,32 @@
+header,
+footer {
+  padding: 15px 20px;
+  border: 2px dashed blue;
+  background-color: aqua;
+  display: flex;
+}
+
+footer {
+  border: 2px solid blue;
+  background-color: aquamarine;
+}
+
+header > div,
+footer > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+header > span,
+footer > span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+}
