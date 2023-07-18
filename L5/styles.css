@@ -1,0 +1,78 @@
+header,
+footer {
+  padding: 15px 20px;
+  border: 2px dashed blue;
+  background-color: aqua;
+  display: flex;
+}
+
+footer {
+  border: 2px solid blue;
+  background-color: aquamarine;
+}
+
+header > div,
+footer > div {
+  flex-grow: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+}
+
+header > span,
+footer > span {
+  font-weight: bold;
+  font-size: 24px;
+}
+
+header a,
+footer a {
+  text-decoration: none;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100vh;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex-grow: 1;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+.content-nutrition-header,
+.content-nutrition-list,
+.content-info-header {
+  margin: unset;
+}
+
+.content-info,
+.content-nutrition {
+  padding: 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.content-gallery-wrapper {
+  overflow: hidden;
+}
+
+.content-gallery {
+  cursor: zoom-in;
+  width: 100%;
+  transition: transform 0.5s;
+}
+
+.content-gallery:hover {
+  transform: scale(1.5);
+}
